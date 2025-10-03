@@ -1,0 +1,9 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: nginxwebserver
+  namespace: krateo-system
+spec:
+  chart:
+    url: oci://ghcr.io/leovice-org/nginx-demo-3/nginxwebserver
+    version: "0.1.0"
